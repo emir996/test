@@ -175,11 +175,7 @@ class Users extends BaseController {
         $_SESSION['user_name'] = $user->name;
         $_SESSION['user_status'] = $user->status;
 
-        redirect('home/index');
-
-        if($_SESSION['user_status'] == 1){
-            redirect('admin/index');
-        }
+        $_SESSION['user_status'] == 1 ? redirect('admin/index') : redirect('home/index');
 
     }
 
