@@ -15,5 +15,11 @@ class Product {
         $this->db = new Database;
     }
 
+    public function getAll(){
+        $this->db->query('SELECT * FROM products');
+
+        return $this->db->resultSet();
+    }
+
     
 }
