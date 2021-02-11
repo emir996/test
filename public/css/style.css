@@ -1,0 +1,17 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: 	#FFD700;
+}
+
+header a {
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+}
