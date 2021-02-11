@@ -17,8 +17,13 @@ class Home extends BaseController{
     }
 
     public function index(){
+        $products = $this->productModel->getAll();
 
-        $data = ['title' => 'Welcome main page'];
+        $data = [
+            'title' => 'Citrus Catalogue',
+            'description' => 'Simple citrus Catalogue',
+            'products' => $products
+            ];
 
         $this->view('home/index', $data);
     }
